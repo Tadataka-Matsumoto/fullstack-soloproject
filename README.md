@@ -6,14 +6,13 @@
 ・データベース作成(migration、seed)
 ・サーバーとの接続
 ・エンドポイントの作成
-・vueを用いた表記
-・
+・vueを用いたフロントエンド
+
 
 
 ・詳細知識
-githubを用いたto do(カンバン) 管理
+・githubを用いたto do(カンバン) 管理
+・packegejsonの
+・yarn.lockの意味
 ・テストの表記
-
-
-
 
