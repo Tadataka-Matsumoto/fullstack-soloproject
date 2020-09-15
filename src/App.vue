@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <Nav msg="日本47都道府県の花" />
+    <Nav msg="47都道府県の花" />
   </div>
 </template>
 
