@@ -1,20 +1,20 @@
 import { Router } from "express";
 import { send } from "../helpers";
 //以下のものは追加でimport
-import { Author } from "../entities/Author";
+import { Flower } from "../entities/Flower";
 import { getRepository } from "typeorm";
 
-/***Authors***/
+/***Flowers***/
 export default function() {
   const router = Router();
-  // This endpoint should send back all authors in the database.
+  // This endpoint should send back all flowers in the database.
   router.get("/", async (req, res) => {
-    // console.log("authorauthorauthorauthor");
+    // console.log("++++++++++++++++++++++");
     // FIXME your code here
     //テーブルを呼び込みたい
-    const AuthorRepository = getRepository(Author);
-    const author = await AuthorRepository.find();
-    send(res, 200, author, true);
+    const FlowerRepository = getRepository(Flower);
+    const flower = await FlowerRepository.find();
+    send(res, 200, flower, true);
   });
 
   return router;
