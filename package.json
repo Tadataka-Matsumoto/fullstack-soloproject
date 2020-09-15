@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "lint": "eslint --fix --ext .ts --ext .js .",
+    "lint-back": "eslint --fix --ext .ts --ext .js .",
     "test": "mocha --inspect -r ts-node/register -r dotenv/config src/tests/index.ts",
     "dev": "node --inspect -r ts-node/register -r dotenv/config src/index.ts",
     "orm": "ts-node -r dotenv/config ./node_modules/typeorm/cli.js --config src/ormconfig.ts",
@@ -13,9 +13,9 @@
     "migrate": "yarn orm migration:run",
     "seeder": "ts-node -r dotenv/config ./node_modules/typeorm-seeding/dist/cli.js",
     "seed": "yarn seeder --configName src/ormconfig.ts seed",
-    "dev-vue": "vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint-vue": "vue-cli-service lint",
+    "lint": "vue-cli-service lint",
     "test:vueunit": "vue-cli-service test:unit",
     "start": "yarn build && node server.js",
     "server": "nodemon server.js"
